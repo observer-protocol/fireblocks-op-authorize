@@ -22,7 +22,7 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@observer-protocol/policy-engine": "^0.2.0",
+    "@observer-protocol/policy-engine": "^0.3.0",
     "jose": "^5.9.6"
   },
   "devDependencies": {
