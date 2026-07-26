@@ -1,6 +1,6 @@
 # fireblocks-op-authorize
 
-Observer Protocol as the authorization gate inside Fireblocks. OP evaluates a proposed transaction against a signed delegation mandate and returns a verdict at the Fireblocks API Co-Signer's callback boundary. **Fireblocks holds the key. OP holds none. OP denies and no signature exists.**
+Observer Protocol as the authorization gate inside Fireblocks. OP evaluates a proposed transaction against a signed delegation mandate and returns a verdict at the Fireblocks API Co-Signer's callback boundary. **Fireblocks holds the key. OP holds none. When the co-signer honors an OP deny, the signature never exists.**
 
 That last sentence is the whole point of this demo, and it is worth reading twice: enforcement does not require custody. The signing key lives in Fireblocks' MPC infrastructure; this handler never sees a key share; and an OP `REJECT` still means the transaction is never signed.
 
