@@ -8,7 +8,7 @@ That last sentence is the whole point of this demo, and it is worth reading twic
 
 This handler is **customer-deployed**. In the Fireblocks architecture the callback handler runs alongside the API Co-Signer, configured by the workspace owner. So what this demonstrates is **OP-operated authorization logic enrolled in the org as the workspace's callback handler** — not an anonymous third party reaching in to gate someone else's Fireblocks account. The distinction matters and it is easy to lose in retelling: the claim is "the workspace's own policy gate is Observer Protocol, and OP holds no key," not "OP can veto arbitrary Fireblocks transactions from outside."
 
-With that scope stated plainly, the claim is strong and true: an OP DENY blocks a real signature on real institutional custody infrastructure, with OP holding no key share.
+With that scope stated plainly, here is the honest claim: OP's Fireblocks callback handler returns fail-closed APPROVE/REJECT verdicts in the documented co-signer JWT protocol, demonstrated end-to-end against a synthetic co-signer; it has not yet exchanged a single artifact with live Fireblocks infrastructure, and the deny is enforced by Fireblocks honoring the verdict, not by OP holding the key.
 
 ## The fail-closed guarantee is Fireblocks', not ours
 
