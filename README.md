@@ -1,5 +1,19 @@
 # fireblocks-op-authorize
 
+> **SUPPORT TIER — REFERENCE IMPLEMENTATION, NO CONSUMER FOUND.** Not under active maintenance.
+> Read it, run it, copy from it; do not assume support.
+>
+> **What backs the tier, stated as an absence with its scope.** The only import of this package
+> found anywhere is its own `examples/handler-server.mjs`. Unlike four of the other adapters, it is
+> not exercised by our conformance harness. That search covered the Observer Protocol estate and the
+> production host; an external adopter would be invisible to us.
+>
+> **There is no npm artifact.** `@observer-protocol/fireblocks-op-authorize` is unpublished (the
+> registry returns 404). Install from source.
+>
+> Tiers for all seven Observer Protocol adapters are listed together in
+> [`op-policy-engine`](https://github.com/observer-protocol/op-policy-engine#adapter-support-tiers).
+
 Observer Protocol as the authorization gate inside Fireblocks. OP evaluates a proposed transaction against a signed delegation mandate and returns a verdict at the Fireblocks API Co-Signer's callback boundary. **Fireblocks holds the key. OP holds none. When the co-signer honors an OP deny, the signature never exists.**
 
 That last sentence is the whole point of this demo, and it is worth reading twice: enforcement does not require custody. The signing key lives in Fireblocks' MPC infrastructure; this handler never sees a key share; and an OP `REJECT` still means the transaction is never signed.
