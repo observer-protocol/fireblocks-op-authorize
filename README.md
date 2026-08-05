@@ -1,3 +1,8 @@
+> # ARCHIVED. The code moved to [`op-adapters`](https://github.com/observer-protocol/op-adapters/tree/main/packages/fireblocks-op-authorize).
+>
+> **No version of `@observer-protocol/fireblocks-op-authorize` was ever published from this repository.** It is kept public
+> and readable so the development history stays available. New releases come from `op-adapters`.
+
 # fireblocks-op-authorize
 
 > **SUPPORT TIER — REFERENCE IMPLEMENTATION, NO CONSUMER FOUND.** Not under active maintenance.
